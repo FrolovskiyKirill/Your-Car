@@ -14,6 +14,7 @@
 		ED90CA8428FB058900F59709 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED90CA8328FB058900F59709 /* ListRowView.swift */; };
 		ED90CA8628FBCE6300F59709 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED90CA8528FBCE6300F59709 /* AddView.swift */; };
 		ED90CA8928FBEC3F00F59709 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED90CA8828FBEC3F00F59709 /* ItemModel.swift */; };
+		ED90CA8C28FC060D00F59709 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED90CA8B28FC060D00F59709 /* ListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		ED90CA8328FB058900F59709 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 		ED90CA8528FBCE6300F59709 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		ED90CA8828FBEC3F00F59709 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		ED90CA8B28FC060D00F59709 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +59,9 @@
 		ED90CA7128FAF85000F59709 /* Your Car */ = {
 			isa = PBXGroup;
 			children = (
-				ED90CA8728FBEA8A00F59709 /* Models */,
 				ED90CA7228FAF85000F59709 /* Your_CarApp.swift */,
+				ED90CA8728FBEA8A00F59709 /* Models */,
+				ED90CA8A28FC05B200F59709 /* ViewModels */,
 				ED90CA8028FAF9B300F59709 /* Views */,
 				ED90CA7628FAF85200F59709 /* Assets.xcassets */,
 				ED90CA7828FAF85200F59709 /* Preview Content */,
@@ -90,6 +93,14 @@
 				ED90CA8828FBEC3F00F59709 /* ItemModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		ED90CA8A28FC05B200F59709 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				ED90CA8B28FC060D00F59709 /* ListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +175,7 @@
 			files = (
 				ED90CA8928FBEC3F00F59709 /* ItemModel.swift in Sources */,
 				ED90CA8628FBCE6300F59709 /* AddView.swift in Sources */,
+				ED90CA8C28FC060D00F59709 /* ListViewModel.swift in Sources */,
 				ED90CA7328FAF85000F59709 /* Your_CarApp.swift in Sources */,
 				ED90CA8228FAFA0300F59709 /* ListView.swift in Sources */,
 				ED90CA8428FB058900F59709 /* ListRowView.swift in Sources */,
@@ -303,6 +315,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,6 +345,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

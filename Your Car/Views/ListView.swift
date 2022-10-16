@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ListView: View {
     
+    @EnvironmentObject var listViewModel: ListViewModel
+    
     @State var items: [ItemModel] = [
         ItemModel(title: "Бензин", isComplited: false),
         ItemModel(title: "Штраф", isComplited: false),
@@ -18,9 +20,11 @@ struct ListView: View {
     
     var body: some View {
         List {
-            ForEach(items) { item in
+            ForEach(listViewModel.items) { item in
                 ListRowView(item: item)
             }
+            .onDelete(perform: listViewModel.deleteItem)
+            .onMove(perform: listViewModel.moveItem)
         }
         .listStyle(PlainListStyle())
         .navigationTitle("Расходы")
@@ -29,6 +33,8 @@ struct ListView: View {
             trailing: NavigationLink("Add", destination: AddView())
         )
     }
+    
+
 }
 
 struct ListView_Previews: PreviewProvider {
@@ -36,6 +42,7 @@ struct ListView_Previews: PreviewProvider {
         NavigationView {
             ListView()
         }
+        .environmentObject(ListViewModel())
     }
 }
 
