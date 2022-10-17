@@ -11,17 +11,15 @@ struct ListView: View {
     
     @EnvironmentObject var listViewModel: ListViewModel
     
-    @State var items: [ItemModel] = [
-        ItemModel(title: "Бензин", isComplited: false),
-        ItemModel(title: "Штраф", isComplited: false),
-        ItemModel(title: "Ремонт", isComplited: true),
-        ItemModel(title: "Страховка", isComplited: false)
-    ]
-    
     var body: some View {
         List {
             ForEach(listViewModel.items) { item in
                 ListRowView(item: item)
+                    .onTapGesture {
+                        withAnimation(.linear) {
+                            listViewModel.updateItem(item: item)
+                        }
+                    }
             }
             .onDelete(perform: listViewModel.deleteItem)
             .onMove(perform: listViewModel.moveItem)
@@ -33,8 +31,6 @@ struct ListView: View {
             trailing: NavigationLink("Add", destination: AddView())
         )
     }
-    
-
 }
 
 struct ListView_Previews: PreviewProvider {

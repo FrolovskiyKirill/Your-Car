@@ -11,7 +11,10 @@ struct AddView: View {
     
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var listViewModel: ListViewModel
-    @State var textFielText: String = ""
+    @State var textFielText = ""
+    
+    @State var alertTitle = ""
+    @State var showAlert = false
     
     var body: some View {
         
@@ -34,11 +37,11 @@ struct AddView: View {
                         .background(Color.accentColor)
                         .cornerRadius(10)
                 }
-
             }
             .padding(14)
         }
-        .navigationTitle("Добавиьть")
+        .navigationTitle("Добавить")
+        .alert(isPresented: $showAlert, content: getAlert)
     }
     
     func saveButtonPressed() {
@@ -50,9 +53,15 @@ struct AddView: View {
     
     func textIsAppropriate() -> Bool {
         if textFielText.count < 3 {
+            alertTitle = "Не менее 3 символов!"
+            showAlert.toggle()
             return false
         }
         return true
+    }
+    
+    func getAlert () -> Alert {
+        return Alert(title: Text(alertTitle))
     }
 }
 
