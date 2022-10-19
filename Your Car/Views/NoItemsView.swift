@@ -18,6 +18,12 @@ struct NoItemsView: View {
                 NavigationLink(
                     destination: AddView()) {
                         Text("Add smth!")
+                            .foregroundColor(.white)
+                            .font(.headline)
+                            .frame(height: 55)
+                            .frame(maxWidth: .infinity)
+                            .background(Color.accentColor)
+                            .cornerRadius(10)
                     }
                 
             }
