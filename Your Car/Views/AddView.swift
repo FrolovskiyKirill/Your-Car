@@ -46,7 +46,7 @@ struct AddView: View {
     
     func saveButtonPressed() {
         if textIsAppropriate() {
-            listViewModel.addItem(title: textFielText)
+            listViewModel.addItem(title: textFielText, icon: "car")
             presentationMode.wrappedValue.dismiss()
         }
     }

@@ -16,6 +16,7 @@
 		ED90CA8928FBEC3F00F59709 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED90CA8828FBEC3F00F59709 /* ItemModel.swift */; };
 		ED90CA8C28FC060D00F59709 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED90CA8B28FC060D00F59709 /* ListViewModel.swift */; };
 		ED90CA8F28FF19C700F59709 /* NoItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED90CA8E28FF19C700F59709 /* NoItemsView.swift */; };
+		EDC1DF412980494B007F412B /* ButtonBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1DF402980494B007F412B /* ButtonBlockView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		ED90CA8828FBEC3F00F59709 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		ED90CA8B28FC060D00F59709 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		ED90CA8E28FF19C700F59709 /* NoItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemsView.swift; sourceTree = "<group>"; };
+		EDC1DF402980494B007F412B /* ButtonBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBlockView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				ED90CA8528FBCE6300F59709 /* AddView.swift */,
 				ED90CA8E28FF19C700F59709 /* NoItemsView.swift */,
 				ED90CA8328FB058900F59709 /* ListRowView.swift */,
+				EDC1DF402980494B007F412B /* ButtonBlockView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				ED90CA7328FAF85000F59709 /* Your_CarApp.swift in Sources */,
 				ED90CA8228FAFA0300F59709 /* ListView.swift in Sources */,
 				ED90CA8F28FF19C700F59709 /* NoItemsView.swift in Sources */,
+				EDC1DF412980494B007F412B /* ButtonBlockView.swift in Sources */,
 				ED90CA8428FB058900F59709 /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

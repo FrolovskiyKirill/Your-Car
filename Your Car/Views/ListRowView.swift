@@ -13,12 +13,13 @@ struct ListRowView: View {
     
     let item: ItemModel
     
+    
     var body: some View {
         HStack {
-            Image(systemName: "fuelpump")
+            Image(systemName: item.icon)
             Text(item.title)
             Spacer()
-            Text("1000")
+            Text(item.title)
             Image(systemName: item.isComplited ? "rublesign.circle" : "shield.fill")
         }
     }
@@ -26,8 +27,8 @@ struct ListRowView: View {
 
 struct ListRowView_Previews: PreviewProvider {
     
-    static var item1 = ItemModel(title: "First", isComplited: true)
-    static var item2 = ItemModel(title: "Second", isComplited: false)
+    static var item1 = ItemModel(title: "First", icon: "car", isComplited: true)
+    static var item2 = ItemModel(title: "Second", icon: "car", isComplited: false)
     
     static var previews: some View {
         Group {
