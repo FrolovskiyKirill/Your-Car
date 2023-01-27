@@ -16,7 +16,11 @@
 		ED90CA8928FBEC3F00F59709 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED90CA8828FBEC3F00F59709 /* ItemModel.swift */; };
 		ED90CA8C28FC060D00F59709 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED90CA8B28FC060D00F59709 /* ListViewModel.swift */; };
 		ED90CA8F28FF19C700F59709 /* NoItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED90CA8E28FF19C700F59709 /* NoItemsView.swift */; };
-		EDC1DF412980494B007F412B /* ButtonBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1DF402980494B007F412B /* ButtonBlockView.swift */; };
+		EDF53B742982E18900A17A88 /* FuelButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF53B732982E18900A17A88 /* FuelButtonView.swift */; };
+		EDF53B762982E42D00A17A88 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF53B752982E42D00A17A88 /* ButtonsView.swift */; };
+		EDF53B7829841F5E00A17A88 /* FineButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF53B7729841F5E00A17A88 /* FineButtonView.swift */; };
+		EDF53B7A2984205C00A17A88 /* RepairButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF53B792984205C00A17A88 /* RepairButtonView.swift */; };
+		EDF53B7C298420E500A17A88 /* TaxButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF53B7B298420E500A17A88 /* TaxButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +34,11 @@
 		ED90CA8828FBEC3F00F59709 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		ED90CA8B28FC060D00F59709 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		ED90CA8E28FF19C700F59709 /* NoItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemsView.swift; sourceTree = "<group>"; };
-		EDC1DF402980494B007F412B /* ButtonBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBlockView.swift; sourceTree = "<group>"; };
+		EDF53B732982E18900A17A88 /* FuelButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelButtonView.swift; sourceTree = "<group>"; };
+		EDF53B752982E42D00A17A88 /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
+		EDF53B7729841F5E00A17A88 /* FineButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FineButtonView.swift; sourceTree = "<group>"; };
+		EDF53B792984205C00A17A88 /* RepairButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepairButtonView.swift; sourceTree = "<group>"; };
+		EDF53B7B298420E500A17A88 /* TaxButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +96,8 @@
 				ED90CA8528FBCE6300F59709 /* AddView.swift */,
 				ED90CA8E28FF19C700F59709 /* NoItemsView.swift */,
 				ED90CA8328FB058900F59709 /* ListRowView.swift */,
-				EDC1DF402980494B007F412B /* ButtonBlockView.swift */,
+				EDF53B752982E42D00A17A88 /* ButtonsView.swift */,
+				EDF53B7D298427DB00A17A88 /* Buttons */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -107,6 +116,17 @@
 				ED90CA8B28FC060D00F59709 /* ListViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EDF53B7D298427DB00A17A88 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				EDF53B732982E18900A17A88 /* FuelButtonView.swift */,
+				EDF53B7729841F5E00A17A88 /* FineButtonView.swift */,
+				EDF53B792984205C00A17A88 /* RepairButtonView.swift */,
+				EDF53B7B298420E500A17A88 /* TaxButtonView.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,11 +201,15 @@
 			files = (
 				ED90CA8928FBEC3F00F59709 /* ItemModel.swift in Sources */,
 				ED90CA8628FBCE6300F59709 /* AddView.swift in Sources */,
+				EDF53B7829841F5E00A17A88 /* FineButtonView.swift in Sources */,
 				ED90CA8C28FC060D00F59709 /* ListViewModel.swift in Sources */,
 				ED90CA7328FAF85000F59709 /* Your_CarApp.swift in Sources */,
 				ED90CA8228FAFA0300F59709 /* ListView.swift in Sources */,
 				ED90CA8F28FF19C700F59709 /* NoItemsView.swift in Sources */,
-				EDC1DF412980494B007F412B /* ButtonBlockView.swift in Sources */,
+				EDF53B7A2984205C00A17A88 /* RepairButtonView.swift in Sources */,
+				EDF53B762982E42D00A17A88 /* ButtonsView.swift in Sources */,
+				EDF53B742982E18900A17A88 /* FuelButtonView.swift in Sources */,
+				EDF53B7C298420E500A17A88 /* TaxButtonView.swift in Sources */,
 				ED90CA8428FB058900F59709 /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,7 +267,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -297,7 +321,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -321,9 +345,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -351,9 +375,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -19,7 +19,7 @@ struct ListView: View {
                         .transition(AnyTransition.opacity.animation(.easeIn))
                 } else {
                     List {
-                        ForEach(listViewModel.items) { item in
+                        ForEach(listViewModel.items.reversed()) { item in
                             ListRowView(item: item)
                                 .onTapGesture {
                                     withAnimation(.linear) {
@@ -33,13 +33,11 @@ struct ListView: View {
                 }
                 
             }
-            ButtonBlockView()
+            ButtonsView()
             
             .listStyle(PlainListStyle())
-            .navigationTitle("Расходы")
             .navigationBarItems(
-                leading: EditButton(),
-                trailing: NavigationLink("Add", destination: AddView())
+                trailing: EditButton()
         )
         }
     }

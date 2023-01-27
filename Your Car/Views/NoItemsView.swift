@@ -17,10 +17,10 @@ struct NoItemsView: View {
                 Text("Hi")
                     .font(.title)
                     .fontWeight(.semibold)
-                Text("Are you a productive person? I think you should click the add button and add a bunch of items to your todo list!")
+                Text("Are you a productive person? I think you should click the add button and add a bunch of items to your Car Expense Tracking!")
                     .padding(.bottom, 30)
                 NavigationLink(
-                    destination: AddView()) {
+                    destination: ButtonsView()) {
                         Text("Add smth!")
                             .foregroundColor(.white)
                             .font(.headline)
