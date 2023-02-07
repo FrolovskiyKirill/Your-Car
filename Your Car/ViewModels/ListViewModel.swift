@@ -9,7 +9,7 @@ import Foundation
 
 class ListViewModel: ObservableObject {
 
-    @Published var items: [ItemModel] = [] {
+    @Published var items: [ItemModel] = [].reversed() {
         didSet {
             saveItems()
         }

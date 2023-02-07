@@ -19,7 +19,7 @@ struct ListView: View {
                         .transition(AnyTransition.opacity.animation(.easeIn))
                 } else {
                     List {
-                        ForEach(listViewModel.items.reversed()) { item in
+                        ForEach(listViewModel.items) { item in
                             ListRowView(item: item)
                                 .onTapGesture {
                                     withAnimation(.linear) {

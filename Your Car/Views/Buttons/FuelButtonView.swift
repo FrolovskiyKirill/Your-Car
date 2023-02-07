@@ -31,7 +31,7 @@ struct FuelButtonView: View {
         }
         .alert("Бензин", isPresented: $showAlert) {
             TextField("Сумма", text: $textFielText)
-                .keyboardType(.numberPad)
+                .keyboardType(.decimalPad)
             Button("OK", action: okButtonPressed)
             Button("Cancel", role: .cancel) { }
         }

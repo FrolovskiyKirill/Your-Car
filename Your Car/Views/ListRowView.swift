@@ -17,7 +17,12 @@ struct ListRowView: View {
     var body: some View {
         HStack {
             Image(systemName: item.icon)
-            Text(item.title)
+            VStack {
+                Text(item.title)
+                Text(Date(), format: .dateTime.year().month().day())
+                    .font(.footnote)
+                    .foregroundColor(.secondary)
+            }
             Spacer()
             Text(item.title)
             Image(systemName: item.isComplited ? "rublesign.circle" : "shield.fill")
